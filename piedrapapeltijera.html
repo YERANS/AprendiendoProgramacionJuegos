@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function aleatorio (min, max) {
+            return Math.floor(Math.random() * (max - min + 1 ) + min)
+        }
+        // 1 es para piedra, 2 para papel, 3 para tijera
+        let jugador = 0
+        let pc = aleatorio(1,3)
+        jugador = prompt("Elige 1 para piedra, 2 para papel, 3 para tijera")
+
+        if (jugador == 1){ 
+            alert("Elegiste piedra 🥌")
+        }
+        else if (jugador == 2){ 
+            alert("Elegiste papel 🧻")
+        }
+        else if (jugador == 3){ 
+            alert("Elegiste tijera ✂")
+        }
+        else { 
+            alert("Eliges PERDER 😢")
+        }
+        if (pc == 1){ 
+            alert("PC Elige piedra 🥌")
+        }
+        else if (pc == 2){ 
+            alert("PC Elige papel 🧻")
+        }
+        else if (pc == 3){ 
+            alert("PC Elige tijera ✂")
+        }
+        else { 
+            alert("Elegiste PERDER 😢")
+        }
+        //COMBATE
+        if (jugador == pc){ 
+            alert("EMPATE 😒")
+        } else if ( jugador == 1 && pc == 3 ) {
+            alert ( " GANASTE 😎 " )
+        } else if ( jugador == 2 && pc == 1 ) {
+            alert ( " GANASTE 😎" )
+        } else if ( jugador == 3 && pc == 2 ) {
+            alert ( " GANASTE 😎" )
+        } else {
+            alert ( " PERDISTE 😢" )
+        }
+        
+
+    </script>
+</head>
+<body>
+    <center>
+        <h1>piedra, papel, tijera</h1>
+        <h2>Y</h2>
+        <h3>ESTE PA TUS NAGAS SON</h3>
+    </center>
+    
+</body>
+</html>
